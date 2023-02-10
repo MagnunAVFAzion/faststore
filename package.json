@@ -1,7 +1,7 @@
 {
   "name": "faststore",
   "description": "Digital commerce toolkit for frontend developers.",
-  "repository": "git@github.com:vtex/faststore.git",
+  "repository": "git@github.com:MagnunAVFAzion/f.git",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -25,7 +25,13 @@
     "lerna": "^6.4.1",
     "plop": "^2.7.6",
     "prettier": "latest",
-    "turbo": "latest"
+    "turbo": "latest",
+    "graphql": "file:../graphql-js/graphql-azion-15.8.0.tgz",
+    "dataloader": "file:../dataloader/dataloader-azion-2.1.0.tgz"
+  },
+  "peerDependencies": {
+    "graphql": "15.8.0",
+    "dataloader": "2.1.0"
   },
   "version": "0.0.0",
   "volta": {

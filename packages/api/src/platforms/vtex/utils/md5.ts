@@ -1,4 +1,5 @@
-import crypto from 'crypto'
+// @ts-nocheck
+import Md5 from './md5Hash'
 
 export const md5 = (payload: string) =>
-  crypto.createHash('md5').update(payload).digest('hex')
+  (new Md5()).update(payload).digest('hex')
