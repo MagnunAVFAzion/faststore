@@ -12,7 +12,7 @@ $ npm install -g @faststore/cli
 $ faststore COMMAND
 running command...
 $ faststore (--version)
-@faststore/cli/2.0.2-alpha.0 darwin-arm64 node-v16.18.0
+@faststore/cli/2.1.0 darwin-arm64 node-v16.19.0
 $ faststore --help [COMMAND]
 USAGE
   $ faststore COMMAND
@@ -23,7 +23,7 @@ USAGE
 <!-- commands -->
 * [`faststore build`](#faststore-build)
 * [`faststore dev`](#faststore-dev)
-* [`faststore help [COMMAND]`](#faststore-help-command)
+* [`faststore help [COMMANDS]`](#faststore-help-commands)
 * [`faststore start`](#faststore-start)
 
 ## `faststore build`
@@ -33,7 +33,7 @@ USAGE
   $ faststore build
 ```
 
-_See code: [dist/commands/build.ts](https://github.com/vtex/faststore/blob/v2.0.2-alpha.0/dist/commands/build.ts)_
+_See code: [dist/commands/build.ts](https://github.com/vtex/faststore/blob/v2.1.0/dist/commands/build.ts)_
 
 ## `faststore dev`
 
@@ -42,18 +42,18 @@ USAGE
   $ faststore dev
 ```
 
-_See code: [dist/commands/dev.ts](https://github.com/vtex/faststore/blob/v2.0.2-alpha.0/dist/commands/dev.ts)_
+_See code: [dist/commands/dev.ts](https://github.com/vtex/faststore/blob/v2.1.0/dist/commands/dev.ts)_
 
-## `faststore help [COMMAND]`
+## `faststore help [COMMANDS]`
 
 Display help for faststore.
 
 ```
 USAGE
-  $ faststore help [COMMAND] [-n]
+  $ faststore help [COMMANDS] [-n]
 
 ARGUMENTS
-  COMMAND  Command to show help for.
+  COMMANDS  Command to show help for.
 
 FLAGS
   -n, --nested-commands  Include all nested commands in the output.
@@ -62,7 +62,7 @@ DESCRIPTION
   Display help for faststore.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.14/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.4/src/commands/help.ts)_
 
 ## `faststore start`
 
@@ -71,5 +71,5 @@ USAGE
   $ faststore start
 ```
 
-_See code: [dist/commands/start.ts](https://github.com/vtex/faststore/blob/v2.0.2-alpha.0/dist/commands/start.ts)_
+_See code: [dist/commands/start.ts](https://github.com/vtex/faststore/blob/v2.1.0/dist/commands/start.ts)_
 <!-- commandsstop -->
