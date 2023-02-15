@@ -21,7 +21,8 @@
   "scripts": {
     "develop": "tsc --watch",
     "build": "tsc",
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts",
+    "pack": "npm pack"
   },
   "devDependencies": {
     "@faststore/eslint-config": "^2.1.0",

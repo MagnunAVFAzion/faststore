@@ -25,7 +25,8 @@
     "lint": "eslint src/**/*.{ts,tsx}",
     "test": "tsdx test",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "pack": "npm pack"
   },
   "size-limit": [
     {

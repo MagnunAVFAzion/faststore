@@ -1,7 +1,7 @@
 {
   "name": "faststore",
   "description": "Digital commerce toolkit for frontend developers.",
-  "repository": "git@github.com:MagnunAVFAzion/f.git",
+  "repository": "git@github.com:MagnunAVFAzion/faststore.git",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -13,7 +13,9 @@
     "release": "lerna version minor --yes && lerna publish from-git --yes",
     "generate-ui-component": "yarn plop --plopfile generators/plopfile.ts",
     "clean": "turbo run clean && rm -rf node_modules",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,md}\""
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,md}\"",
+    "lerna:pack": "lerna run pack",
+    "lerna:publish":"lerna publish"
   },
   "workspaces": [
     "packages/*",
@@ -25,17 +27,15 @@
     "lerna": "^6.4.1",
     "plop": "^2.7.6",
     "prettier": "latest",
-    "turbo": "latest",
-    "graphql": "file:../graphql-js/graphql-azion-15.8.0.tgz",
-    "dataloader": "file:../dataloader/dataloader-azion-2.1.0.tgz"
-  },
-  "peerDependencies": {
-    "graphql": "15.8.0",
-    "dataloader": "2.1.0"
+    "turbo": "latest"
   },
   "version": "0.0.0",
   "volta": {
     "node": "16.18.0",
     "yarn": "1.19.1"
+  },
+  "resolutions": {
+    "**/dataloader": "npm:@MagnunAVFAzion/dataloader@^2.1.0",
+    "**/graphql": "npm:@MagnunAVFAzion/graphql@^15.8.0"
   }
 }

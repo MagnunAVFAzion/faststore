@@ -19,12 +19,14 @@
     "build": "graphql-codegen --config codegen.yml && tsdx build",
     "lint": "eslint src/**/*.ts",
     "test": "tsdx test",
-    "generate": "graphql-codegen --config codegen.yml"
+    "generate": "graphql-codegen --config codegen.yml",
+    "pack": "npm pack"
   },
   "dependencies": {
     "@graphql-tools/schema": "^8.2.0",
     "@rollup/plugin-graphql": "^1.0.0",
-    "dataloader": "file:../../../dataloader/dataloader-azion-2.1.0.tgz",
+    "dataloader": "npm:@MagnunAVFAzion/dataloader@^2.1.0",
+    "graphql": "npm:@MagnunAVFAzion/graphql@^15.8.0",
     "fast-deep-equal": "^3.1.3",
     "isomorphic-unfetch": "^3.1.0",
     "p-limit": "^3.1.0"
@@ -39,15 +41,14 @@
     "eslint": "7.32.0",
     "express": "^4.17.3",
     "express-graphql": "^0.12.0",
-    "graphql": "file:../../../graphql-js/graphql-azion-15.8.0.tgz",
     "jest-transform-graphql": "^2.1.0",
     "ts-jest": "25.5.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
     "typescript": "^4.4.2"
   },
-  "peerDependencies": {
-    "dataloader": "2.1.0",
-    "graphql": "15.8.0"
+  "resolutions": {
+    "**/dataloader": "npm:@MagnunAVFAzion/dataloader@^2.1.0",
+    "**/graphql": "npm:@MagnunAVFAzion/graphql@^15.8.0"
   }
 }

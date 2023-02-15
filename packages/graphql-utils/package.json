@@ -15,11 +15,8 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production tsc",
     "develop": "tsc --watch",
-    "lint": "eslint src/**/*.ts"
-  },
-  "peerDependencies": {
-    "dataloader": "2.1.0",
-    "graphql": "15.8.0"
+    "lint": "eslint src/**/*.ts",
+    "pack": "npm pack"
   },
   "devDependencies": {
     "@faststore/eslint-config": "^2.1.0",
@@ -31,7 +28,13 @@
   "dependencies": {
     "@babel/traverse": "^7.15.4",
     "@babel/types": "^7.15.6",
+    "dataloader": "npm:@MagnunAVFAzion/dataloader@^2.1.0",
+    "graphql": "npm:@MagnunAVFAzion/graphql@^15.8.0",
     "@graphql-codegen/plugin-helpers": "^2.2.0",
     "@graphql-tools/relay-operation-optimizer": "^6.4.0"
+  },
+  "resolutions": {
+    "**/dataloader": "npm:@MagnunAVFAzion/dataloader@^2.1.0",
+    "**/graphql": "npm:@MagnunAVFAzion/graphql@^15.8.0"
   }
 }

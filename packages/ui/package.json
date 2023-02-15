@@ -25,7 +25,8 @@
     "build": "tsc",
     "lint": "eslint src/**/*.{ts,tsx}",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "pack": "npm pack"
   },
   "size-limit": [
     {
