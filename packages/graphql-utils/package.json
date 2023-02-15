@@ -28,10 +28,10 @@
   "dependencies": {
     "@babel/traverse": "^7.15.4",
     "@babel/types": "^7.15.6",
-    "dataloader": "npm:@MagnunAVFAzion/dataloader@^2.1.0",
-    "graphql": "npm:@MagnunAVFAzion/graphql@^15.8.0",
     "@graphql-codegen/plugin-helpers": "^2.2.0",
-    "@graphql-tools/relay-operation-optimizer": "^6.4.0"
+    "@graphql-tools/relay-operation-optimizer": "^6.4.0",
+    "dataloader": "npm:@MagnunAVFAzion/dataloader@^2.1.0",
+    "graphql": "npm:@MagnunAVFAzion/graphql@^15.8.0"
   },
   "resolutions": {
     "**/dataloader": "npm:@MagnunAVFAzion/dataloader@^2.1.0",
