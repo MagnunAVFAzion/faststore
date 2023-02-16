@@ -1,5 +1,5 @@
 {
-  "name": "@faststore/api",
+  "name": "@MagnunAVFAzion/faststore-api",
   "version": "2.1.1",
   "license": "MIT",
   "main": "dist/index.js",
@@ -12,6 +12,11 @@
   "browserslist": "node 12",
   "engines": {
     "node": ">=12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MagnunAVFAzion/faststore.git",
+    "directory": "packages/api"
   },
   "scripts": {
     "develop": "tsdx watch --entry ./local/server.ts --target node --onSuccess \"node ./dist\"",

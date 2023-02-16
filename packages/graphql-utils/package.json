@@ -1,10 +1,10 @@
 {
-  "name": "@faststore/graphql-utils",
+  "name": "@MagnunAVFAzion/faststore-graphql-utils",
   "version": "2.1.1",
   "description": "GraphQL utilities",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vtex/faststore",
+    "url": "https://github.com/MagnunAVFAzion/faststore.git",
     "directory": "packages/graphql-utils"
   },
   "license": "MIT",
