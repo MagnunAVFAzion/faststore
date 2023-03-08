@@ -1,7 +1,7 @@
 {
   "name": "faststore",
   "description": "Digital commerce toolkit for frontend developers.",
-  "repository": "git@github.com:vtex/faststore.git",
+  "repository": "git@github.com:MagnunAVFAzion/faststore.git",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -36,5 +36,9 @@
   "volta": {
     "node": "16.18.0",
     "yarn": "1.19.1"
+  },
+  "resolutions": {
+    "**/dataloader": "npm:@MagnunAVFAzion/dataloader@^2.1.0",
+    "**/graphql": "npm:@MagnunAVFAzion/graphql@^15.8.0"
   }
 }
